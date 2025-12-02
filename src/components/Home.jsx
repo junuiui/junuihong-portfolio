@@ -32,7 +32,7 @@ export default function Home() {
                     cursorClassName: "text-2xl md:text-2xl font-bold",
                 }}
             />
-            
+
             {/* social links */}
             <div className="flex gap-6 mt-8">
                 <a href="https://github.com/junuiui" target="_blank" rel="noopener noreferrer">
@@ -43,6 +43,18 @@ export default function Home() {
                 </a>
                 <a href="https://instagram.com/junuiui" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="w-8 h-8 text-white hover:scale-200 transition-transform" />
+                </a>
+            </div>
+
+            {/* Resume download button */}
+            <div className="mt-12">
+                <a
+                    href="/resume_jun.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-10 px-6 py-3 bg-white text-[#100d74] text-lg rounded-lg shadow-md hover:scale-105 transition-transform"
+                >
+                    View Resume
                 </a>
             </div>
         </div>

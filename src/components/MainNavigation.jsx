@@ -55,7 +55,7 @@ function MainNavigation() {
                             Contact
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink
                             to="/external"
                             className={ ({ isActive }) =>
@@ -66,7 +66,7 @@ function MainNavigation() {
                         >
                             External
                         </NavLink>
-                    </li>
+                    </li> */}
                 </ul>
 
             </nav>
