@@ -19,7 +19,8 @@
         "GoogleTest",
         "OpenCV",
         "React",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "MongoDB"
     ],
     "tools_and_systems": [
         "Git",

@@ -1,5 +1,23 @@
 [
     {
+        "title": "Doum Academy Platform (Not yet deployed)",
+        "year": "2025",
+        "tech": [
+            "React",
+            "TypeScript",
+            "Next.js",
+            "Node.js",
+            "MongoDB"
+        ],
+        "url": "https://github.com/junuiui/the-doum-academy-website",
+        "deployed_url": null,
+        "details": [
+            "Building a full-stack platform with multi-language support using TypeScript, Next.js, Node.js, and MongoDB.",
+            "Designing responsive, reusable UI components and implementing backend APIs (Node.js and MongoDB) for dynamic content handling.",
+            "Integrating real-time features, dynamic content handling, and preparing for deployment on Vercel/Render."
+        ]
+    },
+    {
         "title": "Personal Portfolio Website",
         "year": "2025",
         "tech": [
@@ -9,6 +27,7 @@
             "email-js"
         ],
         "url": "https://github.com/junuiui/portfolio",
+        "deployed_url": "https://junhong.dev/",
         "details": [
             "Built a responsive personal portfolio website using React and Tailwind CSS with a clean, minimal UI design.",
             "Implemented an interactive project showcase with expandable details and category filtering for better navigation.",
@@ -29,6 +48,7 @@
             "OpenAI API"
         ],
         "url": "https://github.com/junuiui/discord_bot66",
+        "deployed_url": null,
         "details": [
             "Developed a modular Discord bot using discord.py, with music playback via yt-dlp and FFmpeg",
             "Integrated OpenAI API for conversational features; structured commands under a custom cog-based architecture",
@@ -47,6 +67,7 @@
             "networkx"
         ],
         "url": "https://github.com/junuiui/Tour-Recommendation-System",
+        "deployed_url": null,
         "details": [
             "Built a CLI geotagged photo analyzer converting .csv metadata into GPX format using pandas and gpxpy",
             "Used spatial clustering with scikit-learn to identify tourism clusters; queried OSM data with osmnx to detect nearby amenities",
@@ -63,6 +84,7 @@
             "CMake"
         ],
         "url": "https://github.com/junuiui/Social-Gaming-Platform",
+        "deployed_url": null,
         "details": [
             "Led a 7-person Agile team, overseeing sprint planning and conducting code reviews for backend architecture",
             "Built a C++ multiplayer server with WebSocket++ for real-time synchronized play and spectator broadcasting",
@@ -79,6 +101,7 @@
             "Embedded"
         ],
         "url": "https://github.com/junuiui/Traffic_light",
+        "deployed_url": null,
         "details": [
             "Developed a Traffic Light System using C code on Debian.",
             "Designed and programmed the traffic light control logic to manage traffic flow efficiently",
@@ -97,6 +120,7 @@
             "Embedded"
         ],
         "url": "https://github.com/junuiui/Smart-Door-System",
+        "deployed_url": null,
         "details": [
             "Developed RFID interaction logging and buzzer feedback system using C on BeagleBone Green",
             "Built a Node.js web server to manage RFID access logs and permissions via a web interface",
@@ -112,6 +136,7 @@
             "Git"
         ],
         "url": "https://github.com/junuiui/RaccoonRaiders",
+        "deployed_url": null,
         "details": [
             "Directed an undermanned team and delegated tasks to team members using a Git Features Branch Workflow",
             "Designed UML diagrams and use cases to improve workflow",
@@ -126,7 +151,8 @@
             "MATLAB",
             "ROBOTC"
         ],
-        "url": "",
+        "url": null,
+        "deployed_url": null,
         "details": [
             "Collaborated with mechanical, electrical, and software engineers to build robots capable of line tracking, barcode reading, and maze solving",
             "Developed and tested functionalities using MATLAB and ROBOTC"
@@ -140,6 +166,7 @@
             "JavaScript"
         ],
         "url": "https://github.com/junuiui/AimTester",
+        "deployed_url": null,
         "details": [
             "Built an aim testing game measuring reaction time and pointer accuracy using HTML and JavaScript",
             "Focused on time management to meet course requirements within a short timeframe"

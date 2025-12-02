@@ -8,6 +8,7 @@ import { useState } from "react";
 import data from "../../../Data/projects.json";
 import { FaGithub } from "react-icons/fa";
 import { FiChevronDown, FiChevronUp, FiArrowDown } from "react-icons/fi";
+import { IoIosLink } from "react-icons/io";
 
 export default function Projects() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -75,6 +76,22 @@ export default function Projects() {
                                     {project.tech.length > 10 && <span>...</span>}
                                 </span>
                                 <span>
+                                    {/* Deployed Webpage */}
+                                    {project.deployed_url ? (
+                                        <a
+                                            href={project.deployed_url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-1 hover:underline text-[#ffffff]"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            <IoIosLink /> Link
+                                        </a>
+                                    ) : (
+                                        null
+                                    )}
+
+                                    {/* Github Link */}
                                     {project.url ? (
                                         <a
                                             href={project.url}
