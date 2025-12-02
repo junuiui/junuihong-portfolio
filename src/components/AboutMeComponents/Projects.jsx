@@ -75,7 +75,9 @@ export default function Projects() {
                                     ))}
                                     {project.tech.length > 10 && <span>...</span>}
                                 </span>
-                                <span>
+
+                                {/* Links */}
+                                <span className="flex items-center gap-4">
                                     {/* Deployed Webpage */}
                                     {project.deployed_url ? (
                                         <a
