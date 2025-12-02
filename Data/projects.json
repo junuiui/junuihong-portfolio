@@ -12,9 +12,9 @@
         "url": "https://github.com/junuiui/the-doum-academy-website",
         "deployed_url": null,
         "details": [
-            "Building a full-stack platform with multi-language support using TypeScript, Next.js, Node.js, and MongoDB.",
-            "Designing responsive, reusable UI components and implementing backend APIs (Node.js and MongoDB) for dynamic content handling.",
-            "Integrating real-time features, dynamic content handling, and preparing for deployment on Vercel/Render."
+            "Building a full-stack platform with multi-language support using TypeScript, Next.js, Node.js, and MongoDB",
+            "Designing responsive, reusable UI components and implementing backend APIs (Node.js and MongoDB) for dynamic content handling",
+            "Integrating real-time features, dynamic content handling, and preparing for deployment on Vercel/Render"
         ]
     },
     {
@@ -29,12 +29,12 @@
         "url": "https://github.com/junuiui/portfolio",
         "deployed_url": "https://junhong.dev/",
         "details": [
-            "Built a responsive personal portfolio website using React and Tailwind CSS with a clean, minimal UI design.",
-            "Implemented an interactive project showcase with expandable details and category filtering for better navigation.",
-            "Integrated EmailJS to enable direct email submissions through the contact form.",
-            "Used OpenAI API to generate dynamic text content and enhance user engagement.",
+            "Built a responsive personal portfolio website using React and Tailwind CSS with a clean, minimal UI design",
+            "Implemented an interactive project showcase with expandable details and category filtering for better navigation",
+            "Integrated EmailJS to enable direct email submissions through the contact form",
+            "Used OpenAI API to generate dynamic text content and enhance user engagement",
             "Implemented routing with React Router and smooth text animations via Typewriter-effect",
-            "Deployed the site with environment variable protection and modular component structure for easy scalability."
+            "Deployed the site with environment variable protection and modular component structure for easy scalability"
         ]
     },
     {
