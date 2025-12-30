@@ -1,7 +1,7 @@
 import Typewriter from 'typewriter-effect';
 
 //  picture ####################################
-import devPic from '../assets/redcolor.png'
+import devPic from '..//assets/mypic.jpeg'
 
 //  icons   ####################################
 import { FaInstagram } from "react-icons/fa";
