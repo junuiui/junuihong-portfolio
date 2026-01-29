@@ -49,7 +49,7 @@ export default function Home() {
             {/* Resume download button */}
             <div className="mt-12">
                 <a
-                    href="/resume_jun_swe.pdf"
+                    href="/resume_jun_swe-2.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-10 px-6 py-3 bg-white text-[#100d74] text-lg rounded-lg shadow-md hover:scale-105 transition-transform"

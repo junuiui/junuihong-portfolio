@@ -1,6 +1,18 @@
 {
   "experiences": [
     {
+      "title": "STEM Tutor & Coding Instructor ",
+      "company": "The Doum Academy  ",
+      "location": "Port Moody, BC",
+      "start": { "month": "Jan", "year": 2022 },
+      "end": { "month": null, "year": null },
+      "details": [
+        "Academic Excellence: Delivered high-level instruction in advanced STEM subjects, including Calculus, Physics 11/12, and Pre-Calculus 11/12; maintained a 95%+ class average, demonstrating exceptional analytical and quantitative reasoning skills",
+        "CS Mentorship: Provided technical guidance for University-level coding courses and Programming 11/12, mentoring students in fundamental data structures, algorithms, and logic building",
+        "Problem Identification: Leveraged 4 years of frontline experience to identify operational bottlenecks, serving as the primary catalyst for independently developing the academy’s management platform"
+      ]
+    },
+    {
       "title": "Technical Assistant",
       "company": "DAEWON Information & Communication Corp.",
       "location": "Korea",
