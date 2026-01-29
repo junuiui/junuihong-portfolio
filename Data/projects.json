@@ -1,20 +1,20 @@
 [
     {
-        "title": "Doum Academy Platform (Not yet deployed)",
+        "title": "Doum Academy Platform",
         "year": "2025",
         "tech": [
-            "React",
-            "TypeScript",
             "Next.js",
-            "Node.js",
+            "TypeScript",
+            "Express.js",
             "MongoDB"
         ],
         "url": "https://github.com/junuiui/the-doum-academy-website",
-        "deployed_url": null,
+        "deployed_url": "https://the-doum-academy-website.vercel.app/",
         "details": [
-            "Building a full-stack platform with multi-language support using TypeScript, Next.js, Node.js, and MongoDB",
-            "Designing responsive, reusable UI components and implementing backend APIs (Node.js and MongoDB) for dynamic content handling",
-            "Integrating real-time features, dynamic content handling, and preparing for deployment on Vercel/Render"
+            "Real-world Impact: Engineering a full-stack platform for a local academy to digitize curriculum management, translating complex client requirements into functional technical specifications",
+            "Self-Driven Stack Expansion: Independently mastered React and Next.js (App Router) to bridge the gap between backend logic and modern frontend UX, achieving a fully responsive and optimized user interface",
+            "Architecture & API Design: Developed a robust backend using Express 5.2 and Mongoose, implementing secure RESTful APIs for dynamic content handling and automated email notifications via Nodemailer",
+            "Iterative Development: Successfully managed evolving project scopes and client feedback cycles, ensuring code maintainability and scalability through strict TypeScript implementation"
         ]
     },
     {
