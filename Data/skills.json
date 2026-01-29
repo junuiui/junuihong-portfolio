@@ -1,33 +1,39 @@
 {
-    "languages": [
-        "C",
-        "C++",
-        "Python",
-        "Java",
-        "JavaScript",
-        "SQL",
-        "Haskell",
-        "Rust",
-        "TypeScript"
-    ],
-    "frameworks": [
-        "Spring",
-        "Spring Boot",
-        "Node.js",
-        "discord.py",
-        "gRPC",
-        "GoogleTest",
-        "OpenCV",
-        "React",
-        "Tailwind CSS",
-        "MongoDB"
-    ],
-    "tools_and_systems": [
-        "Git",
-        "CMake",
-        "Postman",
-        "VSCode",
-        "Ubuntu",
-        "Debian"
-    ]
+  "Programming Languages": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "C",
+    "C++",
+    "Java",
+    "SQL",
+    "Haskell",
+    "Rust"
+  ],
+  "Frontend": [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "HTML5",
+    "CSS3"
+  ],
+  "Backend": [
+    "Node.js",
+    "Express.js",
+    "MongoDB (Mongoose)",
+    "Spring Boot",
+    "gRPC",
+    "RESTful API",
+    "OpenAI API"
+  ],
+  "Tool & System": [
+    "Ubuntu",
+    "Debian",
+    "Git",
+    "Docker",
+    "CMake",
+    "Postman",
+    "GoogleTest",
+    "OpenCV"
+  ]
 }
