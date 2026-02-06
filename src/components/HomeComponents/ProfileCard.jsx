@@ -41,15 +41,7 @@ const ProfileCard = ({
   };
 
   return (
-    <div className="relative">
-      {/* Behind Glow */}
-      {showBehindGlow && (
-        <div
-          className="absolute inset-0 blur-3xl opacity-50 rounded-3xl"
-          style={{ background: behindGlowColor }}
-        />
-      )}
-
+    <div className="relative w-fit">
       {/* Card */}
       <div
         className="relative rounded-3xl p-8 transition-transform duration-300 ease-out"
@@ -61,6 +53,13 @@ const ProfileCard = ({
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
+        {/* Behind Glow - positioned relative to card */}
+        {showBehindGlow && (
+          <div
+            className="absolute -inset-4 blur-3xl opacity-50 rounded-3xl -z-10"
+            style={{ background: behindGlowColor }}
+          />
+        )}
         <div className="flex flex-col items-center text-center space-y-4">
           {/* Avatar */}
           {avatarUrl && (
