@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Neo둥근모", "NeoDunggeunmo";
-  --font-mono: "Neo둥근모", "NeoDunggeunmo", monospace;
+  --font-sans: "JetBrains Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
   --color-primary: #100d74;
   --color-main: #ffffff;
 }
