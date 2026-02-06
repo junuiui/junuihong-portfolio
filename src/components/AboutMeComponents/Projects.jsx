@@ -57,6 +57,9 @@ export default function Projects() {
               >
                 <span className="col-span-2 flex items-center gap-2 font-semibold">
                   {project.title}
+                  {project.status === 'in-progress' && (
+                    <span className="text-sm font-normal text-cyan-400">(In-Progress)</span>
+                  )}
                   {isOpen ? (
                     <FiChevronUp className="w-4 h-4" />
                   ) : (
