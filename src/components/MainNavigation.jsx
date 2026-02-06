@@ -4,7 +4,7 @@ function MainNavigation() {
   return (
     <header className="bg-primary text-main">
 
-      <nav className="flex justify-between items-center px-6 py-3 border-b border-white/10">
+      <nav className="flex justify-between mx-20 items-center px-6 py-3 border-b border-white/10">
 
         {/* Name (left) */}
         <div className="text-xl font-bold">
