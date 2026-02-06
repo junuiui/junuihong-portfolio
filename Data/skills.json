@@ -15,7 +15,9 @@
     "React",
     "Tailwind CSS",
     "HTML5",
-    "CSS3"
+    "CSS3",
+    "Framer Motion",
+    "Zustand"
   ],
   "Backend": [
     "Node.js",
@@ -24,7 +26,8 @@
     "Spring Boot",
     "gRPC",
     "RESTful API",
-    "OpenAI API"
+    "OpenAI API",
+    "Supabase"
   ],
   "Tool & System": [
     "Ubuntu",
