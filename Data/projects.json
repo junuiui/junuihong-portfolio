@@ -1,175 +1,194 @@
 [
-    {
-        "title": "Doum Academy Platform (In Progress)",
-        "year": "2025",
-        "tech": [
-            "Next.js",
-            "TypeScript",
-            "Express.js",
-            "MongoDB"
-        ],
-        "url": "https://github.com/junuiui/the-doum-academy-website",
-        "deployed_url": "https://the-doum-academy-website.vercel.app/",
-        "details": [
-            "Real-world Impact: Engineering a full-stack platform for a local academy to digitize curriculum management, translating complex client requirements into functional technical specifications",
-            "Self-Driven Stack Expansion: Independently mastered React and Next.js (App Router) to bridge the gap between backend logic and modern frontend UX, achieving a fully responsive and optimized user interface",
-            "Architecture & API Design: Developed a robust backend using Express 5.2 and Mongoose, implementing secure RESTful APIs for dynamic content handling and automated email notifications via Nodemailer",
-            "Iterative Development: Successfully managed evolving project scopes and client feedback cycles, ensuring code maintainability and scalability through strict TypeScript implementation"
-        ]
-    },
-    {
-        "title": "Personal Portfolio Website",
-        "year": "2025",
-        "tech": [
-            "React",
-            "JavaScript",
-            "Tailwind-CSS",
-            "email-js"
-        ],
-        "url": "https://github.com/junuiui/portfolio",
-        "deployed_url": "https://junhong.dev/",
-        "details": [
-            "Built a responsive personal portfolio website using React and Tailwind CSS with a clean, minimal UI design",
-            "Implemented an interactive project showcase with expandable details and category filtering for better navigation",
-            "Integrated EmailJS to enable direct email submissions through the contact form",
-            "Used OpenAI API to generate dynamic text content and enhance user engagement",
-            "Implemented routing with React Router and smooth text animations via Typewriter-effect",
-            "Deployed the site with environment variable protection and modular component structure for easy scalability"
-        ]
-    },
-    {
-        "title": "Discord Bot",
-        "year": "2025",
-        "tech": [
-            "Python",
-            "discord.py",
-            "yt-dlp",
-            "FFmpeg",
-            "OpenAI API"
-        ],
-        "url": "https://github.com/junuiui/discord_bot66",
-        "deployed_url": null,
-        "details": [
-            "Developed a modular Discord bot using discord.py, with music playback via yt-dlp and FFmpeg",
-            "Integrated OpenAI API for conversational features; structured commands under a custom cog-based architecture",
-            "Designed scalable and maintainable bot structure with custom decorators and dynamic command registration"
-        ]
-    },
-    {
-        "title": "Tour Recommendation System",
-        "year": "2025",
-        "tech": [
-            "Python",
-            "pandas",
-            "gpxpy",
-            "scikit-learn",
-            "osmnx",
-            "networkx"
-        ],
-        "url": "https://github.com/junuiui/Tour-Recommendation-System",
-        "deployed_url": null,
-        "details": [
-            "Built a CLI geotagged photo analyzer converting .csv metadata into GPX format using pandas and gpxpy",
-            "Used spatial clustering with scikit-learn to identify tourism clusters; queried OSM data with osmnx to detect nearby amenities",
-            "Implemented personalized routing with networkx, generating optimal paths (walking, driving, straight-line) based on spatial graph traversal"
-        ]
-    },
-    {
-        "title": "Social Gaming Platform",
-        "year": "2024",
-        "tech": [
-            "C++",
-            "WebSocket++",
-            "GoogleTest",
-            "CMake"
-        ],
-        "url": "https://github.com/junuiui/Social-Gaming-Platform",
-        "deployed_url": null,
-        "details": [
-            "Led a 7-person Agile team, overseeing sprint planning and conducting code reviews for backend architecture",
-            "Built a C++ multiplayer server with WebSocket++ for real-time synchronized play and spectator broadcasting",
-            "Validated server logic using GoogleTest, ensuring coverage of rule-based edge cases",
-            "Boosted scalability by 30% through modular CMake setup and custom test harnesses"
-        ]
-    },
-    {
-        "title": "Traffic Light System",
-        "year": "2024",
-        "tech": [
-            "C",
-            "BeagleBone Green",
-            "Embedded"
-        ],
-        "url": "https://github.com/junuiui/Traffic_light",
-        "deployed_url": null,
-        "details": [
-            "Developed a Traffic Light System using C code on Debian.",
-            "Designed and programmed the traffic light control logic to manage traffic flow efficiently",
-            "Implemented a state machine to control the sequence of lights and timers based on traffic conditions",
-            "Utilized hardware components including a BeagleBone Green, ZenCape Red, and NeoPixel for system functionalities"
-        ]
-    },
-    {
-        "title": "Smart Door System",
-        "year": "2024",
-        "tech": [
-            "C",
-            "JavaScript",
-            "Node.js",
-            "BeagleBone Green",
-            "Embedded"
-        ],
-        "url": "https://github.com/junuiui/Smart-Door-System",
-        "deployed_url": null,
-        "details": [
-            "Developed RFID interaction logging and buzzer feedback system using C on BeagleBone Green",
-            "Built a Node.js web server to manage RFID access logs and permissions via a web interface",
-            "Integrated sensors (RFID, motion) and actuators (servo motor) to enable touchless smart door access"
-        ]
-    },
-    {
-        "title": "2D Game (Java Program)",
-        "year": "2023",
-        "tech": [
-            "Java",
-            "JUnit5",
-            "Git"
-        ],
-        "url": "https://github.com/junuiui/RaccoonRaiders",
-        "deployed_url": null,
-        "details": [
-            "Directed an undermanned team and delegated tasks to team members using a Git Features Branch Workflow",
-            "Designed UML diagrams and use cases to improve workflow",
-            "Developed core systems in Java (Main character, Map, Tile system, Item system) using OOP",
-            "Built unit and structural tests with JUnit5 for both basic and edge cases"
-        ]
-    },
-    {
-        "title": "Mechatronic Design",
-        "year": "2022",
-        "tech": [
-            "MATLAB",
-            "ROBOTC"
-        ],
-        "url": null,
-        "deployed_url": null,
-        "details": [
-            "Collaborated with mechanical, electrical, and software engineers to build robots capable of line tracking, barcode reading, and maze solving",
-            "Developed and tested functionalities using MATLAB and ROBOTC"
-        ]
-    },
-    {
-        "title": "Web-based First-Person Aim Practice Game",
-        "year": "2022",
-        "tech": [
-            "HTML",
-            "JavaScript"
-        ],
-        "url": "https://github.com/junuiui/AimTester",
-        "deployed_url": null,
-        "details": [
-            "Built an aim testing game measuring reaction time and pointer accuracy using HTML and JavaScript",
-            "Focused on time management to meet course requirements within a short timeframe"
-        ]
-    }
+  {
+    "title": "Pick It",
+    "year": "2026",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Zustand",
+      "Framer Motion"
+    ],
+    "url": "https://github.com/junuiui/pick-it",
+    "deployed_url": null,
+    "details": [
+      "Real-time multiplayer mini-game platform designed for groups to interact, vote, and play together on the fly",
+      "Powered by Supabase for instant updates across all clients with dynamic game sessions",
+      "Features a Vote game with anonymous voting and real-time result tracking, with more games like Ladder and Roulette planned"
+    ]
+  },
+  {
+    "title": "Doum Academy Platform (In Progress)",
+    "year": "2025",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Express.js",
+      "MongoDB"
+    ],
+    "url": "https://github.com/junuiui/the-doum-academy-website",
+    "deployed_url": "https://the-doum-academy-website.vercel.app/",
+    "details": [
+      "Real-world Impact: Engineering a full-stack platform for a local academy to digitize curriculum management, translating complex client requirements into functional technical specifications",
+      "Self-Driven Stack Expansion: Independently mastered React and Next.js (App Router) to bridge the gap between backend logic and modern frontend UX, achieving a fully responsive and optimized user interface",
+      "Architecture & API Design: Developed a robust backend using Express 5.2 and Mongoose, implementing secure RESTful APIs for dynamic content handling and automated email notifications via Nodemailer",
+      "Iterative Development: Successfully managed evolving project scopes and client feedback cycles, ensuring code maintainability and scalability through strict TypeScript implementation"
+    ]
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "year": "2025",
+    "tech": [
+      "React",
+      "JavaScript",
+      "Tailwind-CSS",
+      "email-js"
+    ],
+    "url": "https://github.com/junuiui/portfolio",
+    "deployed_url": "https://junhong.dev/",
+    "details": [
+      "Built a responsive personal portfolio website using React and Tailwind CSS with a clean, minimal UI design",
+      "Implemented an interactive project showcase with expandable details and category filtering for better navigation",
+      "Integrated EmailJS to enable direct email submissions through the contact form",
+      "Used OpenAI API to generate dynamic text content and enhance user engagement",
+      "Implemented routing with React Router and smooth text animations via Typewriter-effect",
+      "Deployed the site with environment variable protection and modular component structure for easy scalability"
+    ]
+  },
+  {
+    "title": "Discord Bot",
+    "year": "2025",
+    "tech": [
+      "Python",
+      "discord.py",
+      "yt-dlp",
+      "FFmpeg",
+      "OpenAI API"
+    ],
+    "url": "https://github.com/junuiui/discord_bot66",
+    "deployed_url": null,
+    "details": [
+      "Developed a modular Discord bot using discord.py, with music playback via yt-dlp and FFmpeg",
+      "Integrated OpenAI API for conversational features; structured commands under a custom cog-based architecture",
+      "Designed scalable and maintainable bot structure with custom decorators and dynamic command registration"
+    ]
+  },
+  {
+    "title": "Tour Recommendation System",
+    "year": "2025",
+    "tech": [
+      "Python",
+      "pandas",
+      "gpxpy",
+      "scikit-learn",
+      "osmnx",
+      "networkx"
+    ],
+    "url": "https://github.com/junuiui/Tour-Recommendation-System",
+    "deployed_url": null,
+    "details": [
+      "Built a CLI geotagged photo analyzer converting .csv metadata into GPX format using pandas and gpxpy",
+      "Used spatial clustering with scikit-learn to identify tourism clusters; queried OSM data with osmnx to detect nearby amenities",
+      "Implemented personalized routing with networkx, generating optimal paths (walking, driving, straight-line) based on spatial graph traversal"
+    ]
+  },
+  {
+    "title": "Social Gaming Platform",
+    "year": "2024",
+    "tech": [
+      "C++",
+      "WebSocket++",
+      "GoogleTest",
+      "CMake"
+    ],
+    "url": "https://github.com/junuiui/Social-Gaming-Platform",
+    "deployed_url": null,
+    "details": [
+      "Led a 7-person Agile team, overseeing sprint planning and conducting code reviews for backend architecture",
+      "Built a C++ multiplayer server with WebSocket++ for real-time synchronized play and spectator broadcasting",
+      "Validated server logic using GoogleTest, ensuring coverage of rule-based edge cases",
+      "Boosted scalability by 30% through modular CMake setup and custom test harnesses"
+    ]
+  },
+  {
+    "title": "Traffic Light System",
+    "year": "2024",
+    "tech": [
+      "C",
+      "BeagleBone Green",
+      "Embedded"
+    ],
+    "url": "https://github.com/junuiui/Traffic_light",
+    "deployed_url": null,
+    "details": [
+      "Developed a Traffic Light System using C code on Debian.",
+      "Designed and programmed the traffic light control logic to manage traffic flow efficiently",
+      "Implemented a state machine to control the sequence of lights and timers based on traffic conditions",
+      "Utilized hardware components including a BeagleBone Green, ZenCape Red, and NeoPixel for system functionalities"
+    ]
+  },
+  {
+    "title": "Smart Door System",
+    "year": "2024",
+    "tech": [
+      "C",
+      "JavaScript",
+      "Node.js",
+      "BeagleBone Green",
+      "Embedded"
+    ],
+    "url": "https://github.com/junuiui/Smart-Door-System",
+    "deployed_url": null,
+    "details": [
+      "Developed RFID interaction logging and buzzer feedback system using C on BeagleBone Green",
+      "Built a Node.js web server to manage RFID access logs and permissions via a web interface",
+      "Integrated sensors (RFID, motion) and actuators (servo motor) to enable touchless smart door access"
+    ]
+  },
+  {
+    "title": "2D Game (Java Program)",
+    "year": "2023",
+    "tech": [
+      "Java",
+      "JUnit5",
+      "Git"
+    ],
+    "url": "https://github.com/junuiui/RaccoonRaiders",
+    "deployed_url": null,
+    "details": [
+      "Directed an undermanned team and delegated tasks to team members using a Git Features Branch Workflow",
+      "Designed UML diagrams and use cases to improve workflow",
+      "Developed core systems in Java (Main character, Map, Tile system, Item system) using OOP",
+      "Built unit and structural tests with JUnit5 for both basic and edge cases"
+    ]
+  },
+  {
+    "title": "Mechatronic Design",
+    "year": "2022",
+    "tech": [
+      "MATLAB",
+      "ROBOTC"
+    ],
+    "url": null,
+    "deployed_url": null,
+    "details": [
+      "Collaborated with mechanical, electrical, and software engineers to build robots capable of line tracking, barcode reading, and maze solving",
+      "Developed and tested functionalities using MATLAB and ROBOTC"
+    ]
+  },
+  {
+    "title": "Web-based First-Person Aim Practice Game",
+    "year": "2022",
+    "tech": [
+      "HTML",
+      "JavaScript"
+    ],
+    "url": "https://github.com/junuiui/AimTester",
+    "deployed_url": null,
+    "details": [
+      "Built an aim testing game measuring reaction time and pointer accuracy using HTML and JavaScript",
+      "Focused on time management to meet course requirements within a short timeframe"
+    ]
+  }
 ]

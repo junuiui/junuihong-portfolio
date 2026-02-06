@@ -2,22 +2,24 @@
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Neo둥근모", "NeoDunggeunmo";
-    --font-mono: "Neo둥근모", "NeoDunggeunmo", monospace;
+  --font-sans: "JetBrains Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-primary: #100d74;
+  --color-main: #ffffff;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-4px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fadeIn {
-    animation: fadeIn 0.25s ease-in-out;
+  animation: fadeIn 0.25s ease-in-out;
 }
