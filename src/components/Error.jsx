@@ -13,7 +13,7 @@ export default function NotFound() {
   }, [navigate]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#100d74] text-white text-center px-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-primary text-white text-center px-6">
 
       <h1 className="text-8xl font-bold mb-4 text-white/80">404</h1>
       <div className="text-xl md:text-2xl font-semibold mb-6">
@@ -22,10 +22,10 @@ export default function NotFound() {
 
       </div>
 
-      {/* Home Button to return */ }
+      {/* Home Button to return */}
       <button
-        onClick={ () => navigate("/") }
-        className="bg-white text-[#100d74] font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition"
+        onClick={() => navigate("/")}
+        className="bg-white text-primary font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition"
       >
         Go Home
       </button>
