@@ -2,6 +2,7 @@
   {
     "title": "Pick It",
     "year": "2026",
+    "status": "in-progress",
     "tech": [
       "Next.js",
       "TypeScript",
@@ -19,8 +20,9 @@
     ]
   },
   {
-    "title": "Doum Academy Platform (In Progress)",
+    "title": "Doum Academy Platform",
     "year": "2025",
+    "status": "in-progress",
     "tech": [
       "Next.js",
       "TypeScript",
@@ -39,6 +41,7 @@
   {
     "title": "Personal Portfolio Website",
     "year": "2025",
+    "status": "done",
     "tech": [
       "React",
       "JavaScript",
@@ -59,6 +62,7 @@
   {
     "title": "Discord Bot",
     "year": "2025",
+    "status": "done",
     "tech": [
       "Python",
       "discord.py",
@@ -77,6 +81,7 @@
   {
     "title": "Tour Recommendation System",
     "year": "2025",
+    "status": "done",
     "tech": [
       "Python",
       "pandas",
@@ -96,6 +101,7 @@
   {
     "title": "Social Gaming Platform",
     "year": "2024",
+    "status": "done",
     "tech": [
       "C++",
       "WebSocket++",
@@ -114,6 +120,7 @@
   {
     "title": "Traffic Light System",
     "year": "2024",
+    "status": "done",
     "tech": [
       "C",
       "BeagleBone Green",
@@ -131,6 +138,7 @@
   {
     "title": "Smart Door System",
     "year": "2024",
+    "status": "done",
     "tech": [
       "C",
       "JavaScript",
@@ -149,6 +157,7 @@
   {
     "title": "2D Game (Java Program)",
     "year": "2023",
+    "status": "done",
     "tech": [
       "Java",
       "JUnit5",
@@ -166,6 +175,7 @@
   {
     "title": "Mechatronic Design",
     "year": "2022",
+    "status": "done",
     "tech": [
       "MATLAB",
       "ROBOTC"
@@ -180,6 +190,7 @@
   {
     "title": "Web-based First-Person Aim Practice Game",
     "year": "2022",
+    "status": "done",
     "tech": [
       "HTML",
       "JavaScript"
