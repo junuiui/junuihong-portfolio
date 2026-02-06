@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col lg:flex-row min-h-screen bg-primary overflow-hidden">
       {/* Left Section (1/3) - Profile */}
-      <div className="w-full lg:w-1/3 flex flex-col items-center justify-center p-8 border-b lg:border-b-0 lg:border-r border-white/10 z-10">
+      <div className="w-full lg:w-1/3 flex flex-col items-center justify-center p-8 z-10">
         <ProfileCard
           name="Junui Hong"
           title="Software Engineer"
@@ -39,7 +39,9 @@ export default function Home() {
       </div>
 
       {/* Right Section (2/3) - Projects */}
-      <div className="w-full lg:w-2/3 flex items-center justify-center bg-[#0a0850]/90 z-10 p-4 md:p-12 overflow-y-auto backdrop-blur-sm">
+      <div
+        className="w-full lg:w-2/3 flex items-center justify-center z-10 p-4 md:p-12 overflow-y-auto backdrop-blur-sm"
+      >
         <div className="w-full h-full flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-white mb-8 border-l-4 border-cyan-400 pl-4">Latest Projects</h2>
           <ProjectGrid />
