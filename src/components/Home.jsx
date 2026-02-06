@@ -1,8 +1,6 @@
-import Typewriter from 'typewriter-effect';
 import devPic from '../assets/mypic.jpeg';
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import ProjectGrid from './HomeComponents/ProjectGrid';
-import PixelSnow from './HomeComponents/PixelSnow';
 import ProfileCard from './HomeComponents/ProfileCard';
 
 export default function Home() {
