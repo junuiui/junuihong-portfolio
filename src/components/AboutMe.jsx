@@ -15,10 +15,10 @@ export default function AboutMe() {
 
   return (
     <div className="min-h-screen bg-primary text-main">
-      {/* Projects Section */}
-      <section id="projects">
+      {/* Projects Section moved to Project */}
+      {/* <section id="projects">
         <ProjectsPage />
-      </section>
+      </section> */}
 
       {/* Experience Section */}
       <section id="experience">
