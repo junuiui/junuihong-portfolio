@@ -33,3 +33,7 @@ jobs:
       
       # - name: Run Lint
       #   run: npm run lint
+
+      - name: Successfully Ending CI
+        run: echo "Portfolio CI Successfully Ended.."
+      
