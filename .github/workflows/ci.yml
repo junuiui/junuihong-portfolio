@@ -1,0 +1,15 @@
+name: Portfolio CI (Quality Check)
+
+on:
+  push:
+    branches: [ "main", "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+  
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Say Hello
+        run: echo "Hello World from [Portfolio CI (Quality Check)]"
