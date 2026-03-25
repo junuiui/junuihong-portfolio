@@ -4,12 +4,32 @@ on:
   push:
     branches: [ "main", "dev" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   
 jobs:
-  say-hello:
+  build-test:
     runs-on: ubuntu-latest
-  
+    
     steps:
-      - name: Say Hello
-        run: echo "Hello World from [Portfolio CI (Quality Check)]"
+      - name: Starting CI
+        run: echo "Portfolio CI Started.."
+      
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Security Audit
+        run: npm audit --audit-level=high 
+      
+      - name: Build Project
+        run: npm build
+      
+      # - name: Run Lint
+      #   run: npm run lint
