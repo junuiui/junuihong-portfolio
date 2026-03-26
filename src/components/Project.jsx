@@ -29,7 +29,7 @@ export default function ProjectPage() {
   const visibleProjects = !isExpanded ? data.slice(0, 3) : data;
 
   return (
-    <div className="bg-primary text-main px-4 py-12 md:px-20 font-mono">
+    <div className="min-h-screen bg-primary text-main px-4 py-12 md:px-20 font-mono">
       {/* center title */}
       <h1 className="text-3xl md:text-4xl font-bold mb-8 border-b text-center border-main pb-3 tracking-wider">
         PROJECTS
