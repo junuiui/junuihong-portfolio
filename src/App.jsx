@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+// import { lazy, Suspense } from 'react';
 
 import './index.css'
 import RootLayout from './pages/Root';
