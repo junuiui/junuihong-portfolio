@@ -16,7 +16,7 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: 2020,
       globals: {
-        ...globals.browser, 
+        ...globals.browser,
         process: 'readonly',
       },
       parserOptions: {
@@ -25,5 +25,9 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+    rules: {
+      'no-unused-vars': 'warn',
+      'react/jsx-uses-vars': 'warn',
+    }
   },
 ])
