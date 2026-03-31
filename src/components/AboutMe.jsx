@@ -1,6 +1,5 @@
 import EducationPage from "../pages/AboutmePages/Education";
 import ExperiencesPage from "../pages/AboutmePages/Experiences";
-import ProjectsPage from "../pages/AboutmePages/Projects";
 import SkillsPage from "../pages/AboutmePages/Skills";
 
 export default function AboutMe() {
@@ -15,10 +14,6 @@ export default function AboutMe() {
 
   return (
     <div className="min-h-screen bg-primary text-main">
-      {/* Projects Section moved to Project */}
-      {/* <section id="projects">
-        <ProjectsPage />
-      </section> */}
 
       {/* Experience Section */}
       <section id="experience">
