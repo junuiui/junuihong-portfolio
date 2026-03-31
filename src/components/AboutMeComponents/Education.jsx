@@ -1,97 +1,94 @@
-import data from "../../../Data/educations.json";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import data from "../../../Data/educations.json"
 
-export default function Education() {
+export default function EducationPage() {
+  const allEducation = [
+    ...data.universities.map(u => ({ ...u, type: 'University' })),
+    ...data.secondaries.map(s => ({ ...s, type: 'Secondary', program: 'High School Diploma' }))
+  ].sort((a, b) => b.start.year - a.start.year);
+
   return (
-    <div className="bg-primary text-main px-4 py-12 md:px-20 font-mono">
-      {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 border-b text-center border-main pb-3 tracking-wider">
-        EDUCATION
+    <div className="min-h-screen bg-primary text-main px-4 py-12 md:px-20 font-mono">
+      {/* Section Title */}
+      <h1 className="text-3xl md:text-4xl font-bold mb-16 border-b text-center border-main pb-3 tracking-wider uppercase">
+        Education
       </h1>
 
-      {/* Table Wrapper */}
-      <div className="border border-main rounded-lg overflow-hidden shadow-lg shadow-main">
-        {/* Header */}
-        <div className="bg-primary text-main grid grid-cols-5 gap-4 px-4 py-3 border-b border-main text-sm md:text-base font-bold">
-          <span className="font-bold">Institution</span>
-          <span className="font-bold">Program</span>
-          <span className="font-bold">GPA</span>
-          <span className="font-bold">Years</span>
-          <span className="font-bold">Notes</span>
-        </div>
+      <div className="relative max-w-5xl mx-auto">
+        {/* Vertical Timeline Line */}
+        <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 bg-main/30 h-full" />
 
-        {/* University Rows */}
-        {data.universities.map((edu, index) => (
-          <div
-            key={index}
-            className="grid grid-cols-5 gap-4 px-4 py-3 border-b border-main/20 hover:bg-[#150D11]/10 transition-colors"
-          >
-            {/* Institution */}
-            <span className="flex items-center gap-2 font-semibold">
-              <a
-                href={edu.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-main"
-              >
-                {edu.name}
-              </a>
-              <FaExternalLinkAlt className="w-3 h-3 opacity-60" />
-            </span>
+        {allEducation.map((edu, index) => {
+          const isEven = index % 2 === 0;
 
-            {/* Program */}
-            <span className="text-sm">{edu.program}</span>
-            {/* GPA */}
-            <span>
-              {edu.gpa.value} / {edu.gpa.scale}
-            </span>
+          return (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: isEven ? 20 : -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className={`relative mb-16 flex flex-col md:flex-row items-center w-full ${
+                isEven ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Timeline Dot */}
+              <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary border-2 border-main rounded-full z-10 shadow-[0_0_8px_rgba(var(--main-rgb),0.5)]" />
 
-            {/* Years */}
-            <span className="text-main">
-              {edu.start.month} {edu.start.year} -{" "}
-              {edu.end.month} {edu.end.year}
-            </span>
+              {/* Date Label (Desktop) */}
+              <div className={`hidden md:block w-1/2 px-8 text-xl font-bold ${isEven ? "text-left" : "text-right"}`}>
+                <span className="border border-main px-3 py-1 rounded text-sm md:text-base">
+                  {edu.start.year}.{edu.start.month} - {edu.end.year}.{edu.end.month}
+                </span>
+              </div>
 
+              {/* Content Card */}
+              <div className="w-full md:w-1/2 pl-12 md:px-8">
+                <div className="bg-[#1A1A1A]/40 border border-main/20 p-6 rounded-lg hover:border-main/60 transition-all group">
+                  {/* Date (Mobile) */}
+                  <span className="md:hidden block text-xs font-bold text-main/70 mb-2">
+                    {edu.start.year}.{edu.start.month} ~ {edu.end.year}.{edu.end.month}
+                  </span>
+                  
+                  <h3 className="text-xl font-bold text-main group-hover:tracking-wide transition-all">
+                    {edu.name}
+                  </h3>
+                  <p className="text-sm md:text-base text-main/90 mb-4">{edu.program}</p>
+                  
+                  {/* Academic Achievements (GPA & Honors) */}
+                  {(edu.gpa || edu.deans_list) && (
+                    <div className="flex flex-wrap gap-3 mt-4">
+                      {edu.gpa && (
+                        <div className="flex flex-col border-l-2 border-main pl-3">
+                          <span className="text-[10px] uppercase opacity-60">GPA</span>
+                          <span className="text-sm font-bold">{edu.gpa.value} / {edu.gpa.scale}</span>
+                        </div>
+                      )}
+                      {edu.deans_list && (
+                        <div className="flex flex-col border-l-2 border-main pl-3">
+                          <span className="text-[10px] uppercase opacity-60">Honors</span>
+                          <span className="text-sm font-bold">Dean's List x{edu.deans_list}</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
 
-            {/* Notes */}
-            <span className="text-sm">
-              Dean’s List × {edu.deans_list}
-            </span>
-          </div>
-        ))}
-
-        {/* Secondary School */}
-        {data.secondaries.map((edu, index) => (
-          <div
-            key={`secondary-${index}`}
-            className="grid grid-cols-5 gap-4 px-4 py-3 border-b border-main hover:bg-[#00ff66]/5 transition-colors"
-          >
-            <span className="flex items-center gap-2 font-semibold">
-              <a
-                href={edu.url}
-                target="_blank"
-                f rel="noopener noreferrer"
-                className="hover:underline text-main"
-              >
-                {edu.name}
-              </a>
-              <FaExternalLinkAlt className="w-3 h-3 opacity-60" />
-            </span>
-
-            <span className="text-sm italic text-gray-300">
-              Secondary Education
-            </span>
-
-            <span className="text-gray-400">—</span>
-
-            <span className="text-main/80">
-              {edu.start.month} {edu.start.year} -{" "}
-              {edu.end.month} {edu.end.year}
-            </span>
-
-            <span className="text-gray-400">—</span>
-          </div>
-        ))}
+                  {/* Institution Link */}
+                  {edu.url && (
+                    <a 
+                      href={edu.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 text-[10px] text-main/50 hover:text-main underline transition-colors"
+                    >
+                      Visit Institution ↗
+                    </a>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );

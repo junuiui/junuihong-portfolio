@@ -1,84 +1,72 @@
-import data from "../../../Data/experiences.json";
+import { motion } from "framer-motion";
+import data from "../../../Data/experiences.json"; // 경로에 맞춰 수정
 
-import { useState } from "react";
-import { FiChevronDown, FiChevronUp, FiArrowDown } from "react-icons/fi";
-
-export default function Experiences() {
-
-  // for expand details
-  const [expandedIndexes, setExpandedIndexes] = useState([]);
-
-  const handleRowClick = (index) => {
-    setExpandedIndexes((prev) =>
-      prev.includes(index)
-        ? prev.filter((i) => i !== index) // if opened already, close
-        : [...prev, index] // if close, open
-    );
-  };
-
+export default function ExperiencesPage() {
   return (
-    <div className="bg-primary text-main px-4 py-12 md:px-20 font-mono">
-      {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 border-b text-center border-main pb-3 tracking-wider">
-        EXPERIENCES
+    <div className="min-h-screen bg-primary text-main px-4 py-12 md:px-20 font-mono">
+      {/* Section Title */}
+      <h1 className="text-3xl md:text-4xl font-bold mb-16 border-b text-center border-main pb-3 tracking-wider">
+        WORK EXPERIENCE
       </h1>
 
-      {/* Table Wrapper */}
-      <div className="border border-main rounded-lg overflow-hidden shadow-lg shadow-main">
-        {/* Header */}
-        <div
-          className="bg-primary text-main grid px-4 py-3 border-b border-main text-sm md:text-base font-bold"
-          style={{ gridTemplateColumns: "2fr 1.5fr 1fr 1fr" }}
-        >
-          <span>Role</span>
-          <span>Company</span>
-          <span>Location</span>
-          <span>Date</span>
-        </div>
+      <div className="relative max-w-5xl mx-auto">
+        {/* Vertical Timeline Bar */}
+        <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 bg-main/30 h-full" />
 
-        {/* Body */}
-        {data.experiences.map((experience, index) => {
-          const isOpen = expandedIndexes.includes(index);
+        {data.experiences.map((exp, index) => {
+          const isEven = index % 2 === 0;
+          const isPresent = !exp.end;
+
           return (
-            <div key={index} className="border-b border-main/20">
-              <div
-                onClick={() => handleRowClick(index)}
-                className="grid px-4 py-3 cursor-pointer hover:bg-[#150D11]/10 transition-all items-center"
-                style={{ gridTemplateColumns: "2fr 1.5fr 1fr 1fr" }}
-              >
-                <span className="flex items-center gap-2 font-semibold">
-                  {experience.title}
-                  {isOpen ? (
-                    <FiChevronUp className="w-4 h-4" />
-                  ) : (
-                    <FiChevronDown className="w-4 h-4" />
-                  )}
-                </span>
-                <span className="truncate">{experience.company}</span>
-                <span>{experience.location}</span>
-                <span className="whitespace-nowrap">
-                  {experience.start.month} {experience.start.year} –{" "}
-                  {experience.end
-                    ? `${experience.end.month} ${experience.end.year}`
-                    : "Present"}
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={`relative mb-16 flex flex-col md:flex-row items-center w-full ${
+                isEven ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Timeline Dot */}
+              <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary border-2 border-main rounded-full z-10">
+                {isPresent && (
+                  <span className="absolute inset-0 rounded-full bg-main animate-ping opacity-75" />
+                )}
+              </div>
+
+              {/* Date Label (Desktop) */}
+              <div className={`hidden md:block w-1/2 px-8 text-xl font-bold ${isEven ? "text-left" : "text-right"}`}>
+                <span className="border border-main px-3 py-1 rounded text-sm md:text-base">
+                  {exp.start.year}.{exp.start.month} - {exp.end ? `${exp.end.year}.${exp.end.month}` : "PRESENT"}
                 </span>
               </div>
 
-              {/* details Row */}
-              {isOpen && (
-                <div className="bg-primary/5 text-main px-8 py-2 text-sm animate-fadeIn">
-                  <ul className="list-disc list-inside space-y-1">
-                    {experience.details.map((detail, i) => (
-                      <li key={i}>{detail}</li>
+              {/* Content Card */}
+              <div className="w-full md:w-1/2 pl-12 md:px-8">
+                <div className="bg-[#1A1A1A]/50 border border-main/20 p-6 rounded-lg hover:border-main transition-all shadow-lg">
+                  {/* Date (Mobile) */}
+                  <span className="md:hidden block text-sm font-bold text-main mb-2">
+                    {exp.start.year}.{exp.start.month} ~ {exp.end ? `${exp.end.year}.${exp.end.month}` : "PRESENT"}
+                  </span>
+                  
+                  <h3 className="text-xl font-bold text-main leading-tight">{exp.title}</h3>
+                  <p className="text-sm opacity-80 mb-4">{exp.company} | {exp.location}</p>
+                  
+                  <ul className="space-y-3">
+                    {exp.details.map((detail, dIdx) => (
+                      <li key={dIdx} className="text-sm md:text-base flex items-start leading-relaxed">
+                        <span className="text-main mr-2">▹</span>
+                        <span>{detail}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>
-              )}
-            </div>
+              </div>
+            </motion.div>
           );
         })}
       </div>
     </div>
   );
 }
-
