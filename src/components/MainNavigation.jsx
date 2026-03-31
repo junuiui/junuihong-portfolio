@@ -8,7 +8,15 @@ function MainNavigation() {
 
         {/* Name (left) */}
         <div className="text-xl font-bold">
-          Junui Hong
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              `relative transition-all font-semibold text-main hover:text-[#e5ff00]}`
+            }
+          >
+            Junui Hong
+          </NavLink>
         </div>
 
         {/* Center */}
@@ -43,6 +51,30 @@ function MainNavigation() {
               About Me
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/project"
+              className={({ isActive }) =>
+                `relative transition-all font-semibold text-main 
+                                hover:text-[#e5ff00] ${isActive ? "after:block after:h-1 after:w-full after:bg-main after:absolute after:-bottom-2" : ""
+                }`
+              }
+            >
+              Project
+            </NavLink>
+          </li>
+          {/* <li>
+            <NavLink
+              to="/Log"
+              className={({ isActive }) =>
+                `relative transition-all font-semibold text-main 
+                                hover:text-[#e5ff00] ${isActive ? "after:block after:h-1 after:w-full after:bg-main after:absolute after:-bottom-2" : ""
+                }`
+              }
+            >
+              Log
+            </NavLink>
+          </li> */}
           <li>
             <NavLink
               to="/contact"

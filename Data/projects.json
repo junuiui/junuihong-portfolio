@@ -17,6 +17,24 @@
       "Real-time multiplayer mini-game platform designed for groups to interact, vote, and play together on the fly",
       "Powered by Supabase for instant updates across all clients with dynamic game sessions",
       "Features a Vote game with anonymous voting and real-time result tracking, with more games like Ladder and Roulette planned"
+    ],
+    "deployment_procedure": [
+      "Containerized the Next.js app using Docker for environment consistency (Dockerize)",
+      "Established a CI/CD pipeline via GitHub Actions to automate testing and deployment (Automation)",
+      "Deployed on AWS EC2 with Nginx as a reverse proxy and secured with SSL (Infrastructure)",
+      "Integrated AWS CloudFront to reduce latency for global real-time interactions (Edge Computing)"
+    ],
+    "technical_decisions": [
+      {
+        "issue": "Real-time sync latency",
+        "solution": "Used Supabase Realtime with AWS CloudFront edge locations",
+        "why": "To minimize RTT (Round Trip Time) for international users"
+      },
+      {
+        "issue": "Manual deployment overhead and inconsistency",
+        "solution": "Built a fully automated CI/CD pipeline with GitHub Actions and Docker Hub",
+        "why": "To achieve zero-downtime deployment and eliminate human error during the release cycle"
+      }
     ]
   },
   {

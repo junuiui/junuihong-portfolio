@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Pick It",
+    "procedure":
+      [
+        "Implement ...",
+        "Build CI",
+        "Deploy...",
+        "Connect to AWS ...",
+        
+      ]
+  }
+]
