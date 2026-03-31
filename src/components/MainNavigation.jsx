@@ -63,7 +63,7 @@ function MainNavigation() {
               Project
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/Log"
               className={({ isActive }) =>
@@ -74,7 +74,7 @@ function MainNavigation() {
             >
               Log
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/contact"
