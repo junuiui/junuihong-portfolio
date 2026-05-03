@@ -18,7 +18,7 @@ export default function Home() {
           showUserInfo
           enableTilt={true}
           enableMobileTilt
-          onContactClick={() => window.open('/resume_jun_swe-3.pdf', '_blank')}
+          onContactClick={() => window.open('/resume_jun_swe_7.pdf', '_blank')}
           showBehindGlow
           behindGlowColor="rgba(125, 190, 255, 0.67)"
           customInnerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
