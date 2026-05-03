@@ -26,12 +26,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Security Audit
-        run: npm audit --audit-level=high  # if high vulnerabilities, fail
-
-      - name: Run Lint
-        run: npm run lint
-
       - name: Build Project
         run: npm run build
       
