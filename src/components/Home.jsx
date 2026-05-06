@@ -10,15 +10,17 @@ export default function Home() {
       <div className="w-full lg:w-1/3 flex flex-col items-center justify-center p-8 z-10">
         <ProfileCard
           name="Junui Hong"
-          title="Software Engineer"
+          title="Software / Devops / Cloud"
           handle="junuiui"
           status="Looking for a job"
-          contactText="Download Resume"
+          contactText_1="SWE Resume"
+          contactText_2="Cloud/DevOps Resume"
           avatarUrl={devPic}
           showUserInfo
           enableTilt={true}
           enableMobileTilt
-          onContactClick={() => window.open('/resume_jun_swe_7.pdf', '_blank')}
+          onContactClick_1={() => window.open('/resume_swe.pdf', '_blank')}
+          onContactClick_2={() => window.open('/resume_cd.pdf', '_blank')}
           showBehindGlow
           behindGlowColor="rgba(125, 190, 255, 0.67)"
           customInnerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"

@@ -18,7 +18,7 @@ export default function ProjectGrid() {
 
       <div className="flex justify-end mt-8">
         <button
-          onClick={() => navigate('/aboutme')}
+          onClick={() => navigate('/project')}
           className="group flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
         >
           <span className="text-lg">View all projects</span>
