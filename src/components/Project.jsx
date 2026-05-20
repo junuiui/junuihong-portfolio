@@ -4,7 +4,7 @@ import { FiArrowDown } from "react-icons/fi";
 import ProjectCard from "./ProjectComponents/ProjectCard" // 새로 만들 컴포넌트
 import ProjectRow from "./ProjectComponents/ProjectRow";   // 기존 리스트용 컴포넌트 분리
 
-export default function ProjectPage() {
+export default function Project() {
   const [isExpanded, setIsExpanded] = useState(false);
   
   // 상위 2개는 하이라이트 카드로 사용

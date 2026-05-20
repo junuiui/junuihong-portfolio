@@ -8,10 +8,12 @@
  *    1. load from github 
  */
 
-export default function Log() {
+import Log from "../components/Log";
+
+export default function LogPage() {
   return (
     <div>
-      Log 
+      <Log />
     </div>
   )
 }

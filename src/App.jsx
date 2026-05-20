@@ -6,10 +6,10 @@ import RootLayout from './pages/Root';
 import HomePage from './pages/Home';
 import AboutMePage from './pages/AboutMe';
 import ContactPage from './pages/Contact';
-import ProjectPage from './components/Project';
+import ProjectPage from './pages/Project';
 import ExternalLinksPage from './pages/ExternalLinks';
 import ErrorPage from './pages/Error';
-import LogPage from './components/Log';
+import LogPage from './pages/Log';
 
 const router = createBrowserRouter([
   {
