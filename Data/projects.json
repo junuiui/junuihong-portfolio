@@ -12,7 +12,7 @@
             "CloudFront",
             "React"
         ],
-        "url": "https://github.com/jhong980821/currency-tracker-v2",
+        "url": "https://github.com/junuiui/currency-insight-tracker-v2",
         "deployed_url": null,
         "details": [
             "A production-grade, containerized full-stack platform for real-time currency monitoring and visualization",
@@ -50,7 +50,7 @@
             "S3",
             "Python"
         ],
-        "url": "https://github.com/jhong980821/currency-tracker-v1",
+        "url": "https://github.com/junuiui/currency-insight-tracker",
         "deployed_url": null,
         "details": [
             "Cost-effective serverless web application designed for on-demand currency exchange rate monitoring",
