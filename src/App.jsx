@@ -7,9 +7,8 @@ import HomePage from './pages/Home';
 import AboutMePage from './pages/AboutMe';
 import ContactPage from './pages/Contact';
 import ProjectPage from './components/Project';
-import ExternalLinksPage from './pages/ExternalLinks';
 import ErrorPage from './pages/Error';
-import LogPage from './components/Log';
+import BlogPage from './components/Blog';
 
 const router = createBrowserRouter([
   {
@@ -29,16 +28,12 @@ const router = createBrowserRouter([
         element: <ProjectPage />
       },
       {
-        path: 'log',
-        element: <LogPage />
+        path: 'blog',
+        element: <BlogPage />
       },
       {
         path: 'contact',
         element: <ContactPage />
-      },
-      {
-        path: 'external',
-        element: <ExternalLinksPage />
       },
       {
         path: '*',
