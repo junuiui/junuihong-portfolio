@@ -1,0 +1,66 @@
+{
+    "projects": [
+        {
+            "title": "NetOps",
+            "slug": "netops"
+        },
+        {
+            "title": "Currency Insight Tracker V2",
+            "slug": "currency_v2"
+        },
+        {
+            "title": "Currency Insight Tracker V1",
+            "slug": "currency_v1"
+        },
+        {
+            "title": "Doum Academy Platform",
+            "slug": "doum_academy_platform"
+        },
+        {
+            "title": "Personal Portfolio Website",
+            "year": "2025",
+            "status": "done",
+            "tech": [
+                "React",
+                "JavaScript",
+                "Tailwind-CSS",
+                "email-js"
+            ],
+            "slug": "portfolio"
+        }
+    ],
+    "studies": {
+        "Cloud": {
+            "AWS": [
+                "EC2.md"
+            ]
+        },
+        "IT_Fundamentals": {
+            "Linux": [],
+            "Network": [],
+            "Data_Structures_and_Algorithms": []
+        },
+        "DevOps_IaC": {
+            "Terraform": [],
+            "Ansible": []
+        },
+        "DevOps_Container": {
+            "Docker": [],
+            "Kubernetes": []
+        },
+        "DevOps_CI_CD": {
+            "GitHub_Actions": [],
+            "Jenkins": [],
+            "ArgoCD": []
+        },
+        "Observability": {
+            "Prometheus_Grafana": [],
+            "ELK_Stack": []
+        },
+        "Database": {
+            "PostgreSQL": [],
+            "MongoDB": [],
+            "Redis": []
+        }
+    }
+}
