@@ -49,7 +49,7 @@ export default function BlogSidebar({
         {activeMenu === "projects" && (
           <div className="space-y-4">
             <h3 className="text-xs font-bold text-main/40 tracking-wider uppercase">
-              // LATEST_PROJECTS
+              // PROJECTS
             </h3>
             <ul className="space-y-1">
               {visibleProjects.map((project, idx) => (
@@ -70,7 +70,7 @@ export default function BlogSidebar({
                   }`}
                 >
                   <span className="text-main/30 group-hover:text-main text-xs">
-                    ⚡
+                    ➤
                   </span>
                   <span className="truncate">{project.title}</span>
                 </li>
