@@ -13,7 +13,7 @@ export default function BlogContent({ selectedContent }) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto bg-[#121212]/30 border border-main/10 rounded-xl p-8 md:p-12 shadow-2xl">
+    <div className="w-full max-w-none mx-auto bg-[#121212]/30 border border-main/10 rounded-xl p-8 md:p-12 shadow-2xl">
       <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-widest border-b border-main/10 pb-4 mb-6">
         <span>SYSTEM_LOG</span>
         <span>/</span>
