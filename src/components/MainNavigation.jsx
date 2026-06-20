@@ -65,14 +65,14 @@ function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/Log"
+              to="/blog"
               className={({ isActive }) =>
                 `relative transition-all font-semibold text-main 
                                 hover:text-[#e5ff00] ${isActive ? "after:block after:h-1 after:w-full after:bg-main after:absolute after:-bottom-2" : ""
                 }`
               }
             >
-              Log
+              Blog
             </NavLink>
           </li>
           <li>

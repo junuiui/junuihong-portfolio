@@ -14,20 +14,22 @@ export default function Contact() {
     e.preventDefault();
     setIsSending(true);
 
-    emailjs.sendForm(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      form.current
-    ).then(
-      () => {
-        setIsSending(false);
-        setIsSent(true);
-      },
-      (error) => {
-        setIsSending(false);
-        alert("Failed to send: " + error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+      )
+      .then(
+        () => {
+          setIsSending(false);
+          setIsSent(true);
+        },
+        (error) => {
+          setIsSending(false);
+          alert("Failed to send: " + error.text);
+        },
+      );
   };
 
   const handleSuccessConfirm = () => {
@@ -76,8 +78,9 @@ export default function Contact() {
         <button
           type="submit"
           disabled={isSending}
-          className={`bg-white text-primary font-bold py-2 rounded-lg hover:bg-gray-200 transition-all ${isSending ? "opacity-60 cursor-not-allowed" : ""
-            }`}
+          className={`bg-white text-primary font-bold py-2 rounded-lg hover:bg-gray-200 transition-all ${
+            isSending ? "opacity-60 cursor-not-allowed" : ""
+          }`}
         >
           {isSending ? "Submitting..." : "Send Message"}
         </button>
