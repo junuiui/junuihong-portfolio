@@ -1,11 +1,3 @@
-- [EC2 (Elastic Compute Cloud)](#ec2-elastic-compute-cloud)
-  - [What is?](#what-is)
-  - [When to Use](#when-to-use)
-- [Types of purchasing options \& Instances](#types-of-purchasing-options--instances)
-  - [Purchasing Options](#purchasing-options)
-  - [Instance Families](#instance-families)
-- [Good to know](#good-to-know)
-
 # EC2 (Elastic Compute Cloud)
 ## What is?
 - Virtual Machine Service that is virtual server which AWS provides
