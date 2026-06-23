@@ -2,24 +2,68 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "JetBrains Mono", monospace;
-  --font-mono: "JetBrains Mono", monospace;
-  --color-primary: #141414;
-  --color-main: #ffffff;
+    --font-sans: "JetBrains Mono", monospace;
+    --font-mono: "JetBrains Mono", monospace;
+    --color-primary: #141414;
+    --color-main: #ffffff;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-4px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.25s ease-in-out;
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+.markdown-body {
+    background-color: transparent !important;
+    /* 부모 div 배색 사용 */
+    color: #c9d1d9 !important;
+    font-family: ui-monospace, SFMono-Regular, SF Pro text, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+    border-bottom: 1px solid #21262d !important;
+    color: #f0f6fc !important;
+}
+
+.markdown-body code {
+    background-color: rgba(110, 118, 129, 0.4) !important;
+    color: #ff7b72 !important;
+    /* 인라인 코드 강조 색상 */
+}
+
+.markdown-body pre {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+}
+
+.markdown-body ul {
+    list-style-type: circle !important;
+    padding-left: 2rem !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.markdown-body ol {
+    list-style-type: lower-alpha !important;
+    padding-left: 2rem !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.markdown-body li {
+    display: list-item !important;
+    /* 일반 div처럼 렌더링되는 것 방지 */
 }
