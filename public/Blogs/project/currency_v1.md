@@ -13,7 +13,7 @@ The system automatically fetches updates every day and shows historical charts o
 ## 2. Architecture & Data Flow
 The project is divided into three simple layers: the frontend website, the backend API, and the daily automated data collector.
 
-![v1 Diagram](public/v1_diagram.jpg)
+![v1 Diagram](/v1_diagram.jpg)
 
 ### Website Delivery
 - Users open the React website through *Amazon CloudFront*.
