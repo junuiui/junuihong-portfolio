@@ -32,7 +32,11 @@
     "studies": {
         "Cloud": {
             "AWS": [
-                "EC2.md"
+                "IAM.md",
+                "EC2.md",
+                "AMI.md",
+                "S3.md"
+
             ]
         },
         "IT_Fundamentals": {
