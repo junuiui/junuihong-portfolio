@@ -36,11 +36,13 @@
                 "EC2.md",
                 "AMI.md",
                 "S3.md"
-
             ]
         },
         "IT_Fundamentals": {
-            "Linux": [],
+            "Linux": [
+                "Bash-basic.md",
+                "Bash-advanced.md"
+            ],
             "Network": [],
             "Data_Structures_and_Algorithms": []
         },
