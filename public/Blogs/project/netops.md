@@ -18,7 +18,7 @@ Flag | Argument | Description | Default Value
 `--target` | string | Space-separated list of target domains or IP addresses | `"8.8.8.8 1.1.1.1"` |
 `--count` | integer | Number of ICMP Echo Request packets sent per target | `5` |
 `--interval` | integer | Cool-down period (in seconds) between sequential probe cycles | `60` |
-`--run-once | None | Executed as a single-shot routine instead of an infinite daemon loop | Disabled (Loop Mode) |
+`--run-once` | None | Executed as a single-shot routine instead of an infinite daemon loop | Disabled (Loop Mode) |
 
 ---
 

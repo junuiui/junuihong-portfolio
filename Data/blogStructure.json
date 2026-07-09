@@ -36,12 +36,20 @@
                 "EC2.md",
                 "AMI.md",
                 "S3.md"
-
             ]
         },
-        "IT_Fundamentals": {
-            "Linux": [],
-            "Network": [],
+        "IT Fundamentals": {
+            "Linux": [
+                "Bash-basic.md",
+                "Bash-advanced.md"
+            ],
+            "Network": [
+                "01_network_fundamentals.md",
+                "02_network_access_media.md",
+                "03_ip_addressing_protocols.md",
+                "04_routing_arp_gateways.md",
+                "05_transport_application_testing.md"
+            ],
             "Data_Structures_and_Algorithms": []
         },
         "DevOps_IaC": {
