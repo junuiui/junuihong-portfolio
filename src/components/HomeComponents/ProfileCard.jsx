@@ -7,12 +7,14 @@ const ProfileCard = ({
     status = 'Online',
     contactText_1,
     contactText_2,
+    contactText_3,
     avatarUrl,
     showUserInfo = true,
     enableTilt = true,
     // enableMobileTilt = false,
     onContactClick_1,
     onContactClick_2,
+    onContactClick_3,
     // showIcon = false,
     showBehindGlow = false,
     behindGlowColor = 'rgba(125, 190, 255, 0.67)',
@@ -91,7 +93,7 @@ const ProfileCard = ({
                     {children}
 
                     {/* Contact Button */}
-                    {onContactClick_1 && (
+                    {/* {onContactClick_1 && (
                         <button
                             onClick={onContactClick_1}
                             className="mt-4 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-all duration-300 backdrop-blur-sm border border-white/20 hover:scale-105"
@@ -107,6 +109,14 @@ const ProfileCard = ({
                             {contactText_2}
                         </button>
                     )}
+                    {onContactClick_3 && (
+                        <button
+                            onClick={onContactClick_3}
+                            className="mt-4 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-all duration-300 backdrop-blur-sm border border-white/20 hover:scale-105"
+                        >
+                            {contactText_3}
+                        </button>
+                    )} */}
                 </div>
             </div>
         </div>
