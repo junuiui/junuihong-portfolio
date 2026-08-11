@@ -48,7 +48,9 @@
                 "02_network_access_media.md",
                 "03_ip_addressing_protocols.md",
                 "04_routing_arp_gateways.md",
-                "05_transport_application_testing.md"
+                "05_transport_application_testing.md",
+                "TCP_UDP-en.md",
+                "TCP_UDP-ko.md"
             ],
             "Data_Structures_and_Algorithms": []
         },
