@@ -50,7 +50,11 @@
                 "04_routing_arp_gateways.md",
                 "05_transport_application_testing.md",
                 "TCP_UDP-en.md",
-                "TCP_UDP-ko.md"
+                "TCP_UDP-ko.md",
+                "Firewall.md",
+                "NAT.md",
+                "OSI_7_layers.md",
+                "Example.md"
             ],
             "Data_Structures_and_Algorithms": []
         },
@@ -59,7 +63,10 @@
             "Ansible": []
         },
         "DevOps_Container": {
-            "Docker": [],
+            "Docker": [
+                "basic-ko.md",
+                "basic-en.md"
+            ],
             "Kubernetes": []
         },
         "DevOps_CI_CD": {
