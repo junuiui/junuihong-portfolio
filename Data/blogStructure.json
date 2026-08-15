@@ -35,6 +35,9 @@
                 "Bash-basic.md",
                 "Bash-advanced.md"
             ],
+            "Windows": [
+                "powershell-ko.md"
+            ],
             "Network": [
                 "01_network_fundamentals.md",
                 "02_network_access_media.md",
@@ -64,7 +67,9 @@
             ]
         },
         "DevOps_IaC": {
-            "Terraform": [],
+            "Terraform": [
+                "basic-ko.md"
+            ],
             "Ansible": []
         },
         "DevOps_Container": {
@@ -75,7 +80,9 @@
             "Kubernetes": []
         },
         "DevOps_CI_CD": {
-            "GitHub_Actions": [],
+            "GitHub_Actions": [
+                "basic-ko.md"
+            ],
             "Jenkins": [],
             "ArgoCD": []
         },
