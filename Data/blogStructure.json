@@ -53,6 +53,11 @@
             ],
             "Data_Structures_and_Algorithms": []
         },
+        "AI": {
+            "Core": [
+                "basic-ko.md"
+            ]
+        },
         "Cloud": {
             "AWS": [
                 "IAM.md",
