@@ -30,18 +30,13 @@
         }
     ],
     "studies": {
-        "Cloud": {
-            "AWS": [
-                "IAM.md",
-                "EC2.md",
-                "AMI.md",
-                "S3.md"
-            ]
-        },
         "IT Fundamentals": {
             "Linux": [
                 "Bash-basic.md",
                 "Bash-advanced.md"
+            ],
+            "Windows": [
+                "powershell-ko.md"
             ],
             "Network": [
                 "01_network_fundamentals.md",
@@ -58,8 +53,28 @@
             ],
             "Data_Structures_and_Algorithms": []
         },
+        "AI": {
+            "Core": [
+                "basic-ko.md"
+            ]
+        },
+        "Cloud": {
+            "AWS": [
+                "IAM.md",
+                "EC2.md",
+                "AMI.md",
+                "S3.md"
+            ]
+        },
+        "Git_basic": {
+            "Git": [
+                "git.md"
+            ]
+        },
         "DevOps_IaC": {
-            "Terraform": [],
+            "Terraform": [
+                "basic-ko.md"
+            ],
             "Ansible": []
         },
         "DevOps_Container": {
@@ -70,7 +85,9 @@
             "Kubernetes": []
         },
         "DevOps_CI_CD": {
-            "GitHub_Actions": [],
+            "GitHub_Actions": [
+                "basic-ko.md"
+            ],
             "Jenkins": [],
             "ArgoCD": []
         },
