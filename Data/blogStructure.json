@@ -31,6 +31,9 @@
     ],
     "studies": {
         "IT Fundamentals": {
+            "ITs": [
+                "must-know.md"
+            ],
             "Linux": [
                 "Bash-basic.md",
                 "Bash-advanced.md"
