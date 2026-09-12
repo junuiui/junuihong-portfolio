@@ -102,6 +102,13 @@
             "PostgreSQL": [],
             "MongoDB": [],
             "Redis": []
+        },
+        "Certificates": {
+            "CompTIA A+": [],
+            "CompTIA Network+": [
+                "notes.md"
+            ],
+            "CCNA": []
         }
     }
 }
